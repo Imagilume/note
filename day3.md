@@ -111,26 +111,33 @@ Bayer RAW格式
 只有图像数据
 像素深度8-16
 存放方式 packed和unpacked 占用空间是否紧凑区别
+GG 有Gb和Gr区分
 
-## Quad Bayer 格式
+## Quad Bayer RAW格式
 高端相机
-输出到ISP之前转为普通的BayerRAW格式
+输出到ISP之前转为普通的BayerRAW格式 Rermosaic bining
 四合一算法
 
 ## HSV/HSL
 六角锥体模型
-
+色调环 饱和度 亮度
+色调环 黑白
 ## YUV 
 true color颜色空间
 Y表示亮度 灰阶值
 U、V色度 影像色彩和饱和度
-
+Ycbcr模式 
+两种模式可以相互转换
 空间排列：平面格式、交织格式
-
+两种存储方式：plan模式和packet模式
+四个像素公用一个色度
+444模式
 ## BMP位图
 WINDOWS应用程序支持：图像信息丰富、几乎不进行压缩
-分为文件头和位图信息部分
+分为位图、文件头和位图信息部分
 
 ## JPEG
 压缩格式 去除冗余图像数据 灵活调节
 EXIF 描述图像信息 效果参数
+质量比达到95以上质量较好
+
